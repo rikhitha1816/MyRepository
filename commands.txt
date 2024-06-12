@@ -1,0 +1,86 @@
+* git init: Initializes a new Git repository in the current directory.
+*git clone <repository_url>: Creates a local copy of a remote repository.
+*git add <file>: Stages changes in <file> for the next commit.
+*git add .: Stages all changes in the current directory for the next commit.
+*git commit -m "message": Records the staged changes with a descriptive message.
+*git status: Displays the status of the working directory and staging area.
+*git log: Shows the commit history for the repository.
+*git diff: Shows the differences between working directory changes and the staged changes.
+*git checkout <branch>: Switches to the specified branch and updates the working directory.
+*git checkout -b <new-branch>: Creates a new branch and switches to it.
+*git merge <branch>: Merges the specified branch into the current branch.
+*git pull: Fetches changes from the remote repository and merges them into the current branch.
+*git push: Uploads the local branch commits to the remote repository.
+*git remote -v: Shows the URLs of the remote repositories.
+*git fetch: Downloads objects and refs from another repository.
+*git branch: Lists all local branches in the repository.
+*git branch -d <branch>: Deletes the specified branch.
+*git rm <file>: Removes the specified file from the working directory and stages the removal.
+*git stash: Temporarily saves changes that are not yet ready to be committed.
+*git stash pop: Applies the most recently stashed changes and removes them from the stash list.
+*git tag <tagname>: Creates a tag with the specified name at the current commit.
+*git show <commit>: Displays information about the specified commit.
+*git config --global user.name "Name": Sets the name that will be attached to your commits.
+*git config --global user.email "email@example.com": Sets the email that will be attached to your commits.
+*git config --list: Lists all Git configuration settings.
+*git rebase <branch>: Reapplies commits on top of another base branch.
+*git reset --hard <commit>: Resets the working directory and staging area to match the specified commit.
+*git revert <commit>: Creates a new commit that undoes the changes from the specified commit.
+*git cherry-pick <commit>: Applies changes from the specified commit onto the current branch.
+*git bisect start: Starts the bisect process to find the commit that introduced a bug.
+*git bisect bad <commit>: Marks the current commit as bad during a bisect process.
+*git bisect good <commit>: Marks the current commit as good during a bisect process.
+*git blame <file>: Shows what revision and author last modified each line of a file.
+*git archive --format=zip --output=<file.zip> <commit>: Creates a zip archive of files from a specified commit.
+*git remote add origin <url>: Adds a new remote repository with the specified URL.
+*git push -u origin <branch>: Pushes the specified branch to the remote repository and sets it as the upstream branch.
+*git fetch origin: Fetches updates from the remote repository.
+*git merge origin/<branch>: Merges changes from the remote branch into the current branch.
+*git rebase origin/<branch>: Reapplies commits on top of the latest changes from the remote branch.
+*git clean -f: Removes untracked files from the working directory.
+*git gc: Optimizes the repository by cleaning up unnecessary files and optimizing the local repository.
+*git mv <oldfile> <newfile>: Moves or renames a file, and stages the move for commit.
+*git log --oneline: Displays the commit history in a compact form with one line per commit.
+*git log --graph: Shows the commit history in a graphical format.
+*git diff --staged: Shows the differences between the staged changes and the last commit.
+*git commit --amend: Modifies the last commit with the staged changes and updates the commit message.
+*git pull --rebase: Fetches changes from the remote repository and rebases the current branch on top of them.
+*git reflog: Shows a log of all references (branches, HEAD, etc.) and their movements.
+*git reset <file>: Unstages the specified file, keeping its changes in the working directory.
+*git merge --no-ff <branch>: Merges the specified branch into the current branch without fast-forwarding.
+*git tag -a <tagname> -m "message": Creates an annotated tag with the specified name and message.
+*git remote remove <name>: Removes the specified remote repository.
+*git cherry <upstream>: Lists commits that are in the current branch and not in the upstream branch.
+*git grep <pattern>: Searches for a pattern in the repository files.
+*git shortlog: Summarizes git log output in a short format.
+*git show-branch: Shows branches and their commits.
+*git describe: Describes a commit using the most recent tag reachable from it.
+*git diff <commit> <commit>: Shows the differences between two commits.
+*git stash list: Lists all stashed changes.
+*git stash apply <stash>: Applies the specified stash without removing it from the stash list.
+*git stash drop <stash>: Removes the specified stash from the stash list.
+*git branch --merged: Lists branches that have been merged into the current branch.
+*git branch --no-merged: Lists branches that have not been merged into the current branch.
+*git rebase --interactive <base>: Starts an interactive rebase, allowing you to edit, squash, or reorder commits.
+*git revert --no-commit <commit>: Reverts the specified commit without committing the changes.
+*git diff --name-only: Shows the names of changed files.
+*git diff --cached: Shows changes between the index (staged area) and the last commit.
+*git config --global core.editor <editor>: Sets the default editor for Git.
+*git bisect reset: Resets the bisect state, ending the bisect session.
+*git bisect run <command>: Uses the specified command to automate the bisect process.
+*git submodule add <repository> <path>: Adds a submodule repository at the specified path.
+*git submodule init: Initializes local configuration for submodules.
+*git submodule update: Fetches and checks out the latest changes for submodules.
+*git archive <commit> --format=zip --output=<file.zip>: Creates a zip archive of files from a specified commit.
+*git prune: Removes unreachable objects from the object database to free up space.
+*git worktree add <path> <branch>: Creates a new working tree linked to a specified branch.
+*git worktree list: Lists all working trees linked to the repository.
+*git send-email: Sends a collection of patches via email.
+*git format-patch <base>: Creates patch files for changes since the specified base commit.
+*git config --global core.autocrlf true: Configures Git to automatically handle line endings.
+*git config --global core.safecrlf true: Prevents Git from accepting files with mixed line endings.
+*git config --global merge.tool <tool>: Sets the default merge tool.
+*git config --global diff.tool <tool>: Sets the default diff tool.
+*git config --global alias.<alias> '<command>': Creates a Git command alias.
+*git config --global color.ui auto: Enables colored Git output for better readability.
+*git config --global push.default simple: Sets the default push behavior to push the current branch to its upstream branch.
