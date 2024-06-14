@@ -1,0 +1,8 @@
+public cloud:
+Accessible: Available to the general public over the internet.
+Scalable: Resources can be easily scaled up or down based on demand.
+Shared Infrastructure: Multiple users share the same physical hardware.
+Resource Pooling: Computing resources are pooled together and dynamically allocated.
+Self-Service: Users can provision and manage resources without provider intervention.
+Pay-Per-Use: Users pay only for the resources they consume.
+Managed Services: Providers offer various managed services like databases, security, etc.
